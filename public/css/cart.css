@@ -1,0 +1,140 @@
+.aboutProduct {
+    width: 100%;
+
+    margin-top: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+}
+
+.imgProduct {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.aboutProductClass, .imgClass {
+    width: 50%;
+}
+
+.aboutProd {
+    background: #f6f6f6;
+}
+
+.aboutProd, .aboutProd2 {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nameDesc {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nameProduct {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.orderProduct {
+    margin-top: 30px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 5px rgba(34, 60, 80, 0.2);;
+}
+
+.textOrder, .btnOrder {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.orderHead li {
+    align-items: baseline;
+    display: flex;
+}
+
+.orderHead li::before {
+    content: '';
+    border-bottom: 1px dashed black;
+    flex-grow: 1;
+    order: 2;
+    margin: 0 5px;
+}
+
+.orderHead .value {
+    order: 3;
+}
+
+
+.btnMadeOrder {
+    border: 1px solid black;
+
+}
+
+.btnMadeOrder:hover {
+    border: 1px solid white;
+}
+
+.btnMadeOrder {
+    color: black;
+    cursor: pointer;
+    background: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.btnMadeOrder:hover {
+    color: white;
+    background-color: var(--main);
+}
+
+.cartInputQty {
+    max-width: 50px;
+}
+
+
+/**/
+
+.quantityText{
+    margin: 0 7px;
+}
+.quantityBtn{
+    font-size: 20px;
+    padding:0 10px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #777777;
+}
+.quantityBtn:hover{
+    background-color: var(--main);
+    color: white;
+    border: 1px solid white;
+
+}
+
+
+@media (max-width: 600px) {
+    .card__image__cart{
+        height: 200px;
+    }
+    .nameDesc{
+        font-size: 18px;
+    }
+    .nameProduct{
+        font-size: 16px;
+    }
+}
+@media (max-width: 500px) {
+    .inCard{
+        display: block!important;
+        justify-content: center!important;
+    }
+    .aboutProductClass, .imgClass{
+        width: 100%;
+    }
+}

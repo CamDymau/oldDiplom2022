@@ -1,0 +1,249 @@
+.choseFilter{
+    width: 100%;
+}
+.filter {
+    margin-top: 7px;
+    border-radius: 10px;
+    max-width: 25%;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+}
+
+.filterCategory {
+    width: 100%;
+}
+.filterButton{
+    border: none;
+    background: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.filterButton:hover{
+    background: var(--main);
+    color: white;
+}
+
+
+
+.priceCategory {
+    cursor: pointer;
+}
+
+.bgSection , .bgSection1{
+    padding: 5px 10px;
+    width: auto;
+}
+
+.bgSection:hover {
+    background-color: #eaeaea;
+}
+.bgSection1:hover{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #eaeaea;
+}
+
+
+
+.arrow {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(135deg);
+}
+
+.nameCategory2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.inputSection{
+    margin: 10px;
+}
+.inputSection input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 34%;
+    height: 90%;
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    margin: 0;
+}
+.inputSection span{
+    padding: 0 5px;
+}
+
+.arrowBtn {
+    position: absolute;
+    display: none;
+    margin-left: 250px;
+    padding: 10px 20px;
+    width: auto;
+    font-size: 16px;
+    height:auto;
+    cursor: pointer;
+    color: white;
+    background:  var(--main);
+    font-weight: bold;
+    z-index: 1010;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.arrowBtn:before {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    border-right-color:  var(--main);
+    border-width: 9px;
+    margin-top: -9px;
+}
+
+
+
+
+/*   Card   */
+
+.allCard{
+    margin-left: 0.7%;
+    width: 100%;
+}
+
+.card4 {
+    position: relative;
+    width: 32%;
+    max-width: 31%;
+    height: auto;
+    object-fit: cover;
+    margin: 7px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 4px 14px 1px rgba(34, 60, 80, 0.2);
+
+}
+.cardProduct{
+    color: black;
+}
+.cardProduct:hover{
+    color: var(--main) ;
+}
+
+.inCard{
+
+    padding: 10px;
+}
+.btnOpenThis{
+    width: 100%;
+}
+.inCard h3{
+    margin: 5px 0 ;
+}
+.inCard p {
+    margin: 5px 0;
+}
+.btnShowThis{
+    border: 1px solid black;
+    margin: auto;
+}
+.ProductInCard{
+    border: none;
+    margin-left: auto;
+}
+.btnShowThis:hover{
+    border: 1px solid white;
+}
+.btnShowThis, .ProductInCard{
+    max-width: 150px;
+    color: black;
+    cursor: pointer;
+    background: none;
+    font-size: 18px;
+    padding: 7px 10px;
+}
+.btnShowThis:hover,.ProductInCard:hover{
+    color: white;
+    background-color:  var(--main);
+}
+.inputCountProduct{
+    border: 1px solid black;
+    outline: none;
+}
+.inputCountProduct:focus{
+    color:#e18235 ;
+    border: 1px solid  var(--main);
+}
+
+
+.headerTovar {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card__image {
+    object-fit: cover;
+    width: 70%;
+    height: 200px;
+    display: block;
+}
+.card__image__cart{
+    object-fit: cover;
+    width: 50%;
+    height: 300px;
+    display: block;
+
+}
+#inCart{
+    display: none;
+}
+
+.mobileFilter{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 880px) {
+    .mobileFilter{
+        display: block;
+    }
+    .mobInis{
+        display: none!important;
+    }
+}
+@media (max-width: 774px) {
+    .card4{
+        width: 45% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 712px) {
+    .choseFilter{
+        display: block!important;
+        justify-content: normal!important;
+    }
+}
+@media (max-width: 500px) {
+    .card4{
+        width: 100% !important;
+    }
+    .catalogMenu{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+}
+

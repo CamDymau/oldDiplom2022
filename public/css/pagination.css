@@ -1,0 +1,19 @@
+.link-disable{
+    padding: 5px;
+}
+.pagLink{
+    font-size: 20px;
+}
+.activePaginateLink,.noActiveLink:hover{
+    margin: 0 5px;
+    background: var(--main);
+    padding: 5px 13px;
+    border-radius: 50%;
+    color: white !important;
+}
+.noActiveLink{
+    color: var(--main);
+    padding: 5px 13px;
+    margin: 0 5px;
+}
+
